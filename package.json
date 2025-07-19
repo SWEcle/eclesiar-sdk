@@ -1,0 +1,24 @@
+{
+  "name": "eclesiar-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --declaration --outDir dist --moduleResolution node && tsc-alias"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.8.3"
+  }
+}
