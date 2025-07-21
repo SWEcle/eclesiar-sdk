@@ -9,6 +9,7 @@ export type Currency = {
     name: string;
     avatar: string;
     currency: Currency;
+    is_availible: boolean;
   }
 
   export interface RegionBonus {

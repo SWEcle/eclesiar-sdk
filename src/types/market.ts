@@ -5,10 +5,8 @@ export interface ApiResponse<T> {
 }
 
 export interface MarketCoinOffer {
-  id: number;
-  currency_id: number;
   amount: number;
-  price: number;
+  rate: number;
   owner: {
     id: number;
     type: string;
@@ -16,10 +14,8 @@ export interface MarketCoinOffer {
 }
 
 export interface MarketItemOffer {
-  id: number;
-  item_id: number;
   amount: number;
-  price: number;
+  rate: number;
   owner: {
     id: number;
     type: string;
