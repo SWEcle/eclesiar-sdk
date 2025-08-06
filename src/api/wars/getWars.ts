@@ -1,13 +1,7 @@
 import { apiFetch } from "@/client";
-import { War } from "@/types/wars";
+import { GetWarsParams, War } from "@/types/wars";
 
-type GetWarsParams = {
-  event_wars?: 0 | 1;
-  extra_details?: 0 | 1;
-  war_id?: number;
-  expired?: number;
-  page?: number;
-};
+
 
 export async function getWars({
   event_wars = 0,

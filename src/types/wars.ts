@@ -49,3 +49,11 @@ export type WarHit = {
   item_id: number | null;
   created_at: string;
 };
+
+export type GetWarsParams = {
+  event_wars?: 0 | 1;
+  extra_details?: 0 | 1;
+  war_id?: number;
+  expired?: number;
+  page?: number;
+};
